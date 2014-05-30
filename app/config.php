@@ -16,3 +16,8 @@
  *  this is the only file you will need to code your application
  *  Any other files modified could cause security or deployment issues
 */
+class appConfig {
+
+    static $appTitle = 'Default Application';
+    static $appVersion = 0.1;
+}

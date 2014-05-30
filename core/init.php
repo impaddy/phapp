@@ -11,7 +11,12 @@
  *   Written in PHP, we aim to provide a powerful CMS
  *   which can allow the creation of powerful web applications
  *   from cooperate level applications to hobby app deployment.
+ *
 */
-require_once('core/init.php');
 
-$app = new app();
+
+//load app
+require_once('classes/app.php');
+
+//load config
+require_once('app/config.php');

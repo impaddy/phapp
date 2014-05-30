@@ -17,11 +17,10 @@ class app{
 
     public function __construct(){
 
-        $appTitle = 'Default App';
 
         echo '<html>';
         echo '<head>';
-        echo '<title>' . $appTitle . '</title>';
+        echo '<title>' . appConfig::$appTitle . '</title>';
         echo '</head>';
         echo '<body>';
         //load custom app view.
@@ -35,8 +34,7 @@ class app{
 
     private function loadApp(){
 
-        if(file_exists('app/config.php'))
-        {
+        if(file_exists('app/config.php')) {
             echo '<h1>App Succesfully loaded</h1>';
         }
         else {
@@ -44,6 +42,8 @@ class app{
         }
 
     }
+
+    public function
 
 
 }
