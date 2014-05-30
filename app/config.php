@@ -11,7 +11,8 @@
  *   Written in PHP, we aim to provide a powerful CMS
  *   which can allow the creation of powerful web applications
  *   from cooperate level applications to hobby app deployment.
+ *
+ *  This is where your app is primarily stored and codded,
+ *  this is the only file you will need to code your application
+ *  Any other files modified could cause security or deployment issues
 */
-require_once('core/app.php');
-
-$app = new app();
