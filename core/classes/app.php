@@ -17,16 +17,15 @@ class app{
 
     public function __construct(){
 
-
-        echo '<html>';
-        echo '<head>';
-        echo '<title>' . appConfig::$appTitle . '</title>';
-        echo '</head>';
-        echo '<body>';
+        echo '<html>'.PHP_EOL;
+        echo '<head>'.PHP_EOL;
+        echo '<title>' . appConfig::$appTitle . '</title>'.PHP_EOL;
+        echo '</head>'.PHP_EOL;
+        echo '<body>'.PHP_EOL;
         //load custom app view.
         $this->loadApp();
-
-        echo '</body>';
+        appMain::body();
+        echo '</body>'.PHP_EOL;
         echo '</html>';
 
 
@@ -35,7 +34,7 @@ class app{
     private function loadApp(){
 
         if(file_exists('app/config.php')) {
-            echo '<h1>App Succesfully loaded</h1>';
+            require_once('app/index.php');
         }
         else {
             echo 'Error: Could not load App, did you forget to install it?';
@@ -43,7 +42,7 @@ class app{
 
     }
 
-    public function
+
 
 
 }
